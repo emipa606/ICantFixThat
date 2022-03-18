@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>I Cant Fix That</name>
+  <packageId>Mlie.ICantFixThat</packageId>
+  <author>Mlie</author>
+  <url>https://github.com/emipa606/ICantFixThat</url>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+
+This mod stops your pawns from being able to repair buildings, apparel and weapons that they do not know how to build in the first place. 
+Basically anything that has not been researched can be used but not repaired.
+Always found it strange that my colony of tribals could scavenge a solar panel or a sniper rifle and keep it in working order.
+
+Its compatible with the following mods:
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=726244033]Fluffy Breakdowns[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2584064444]Fluffy Breakdowns (1.3 Update)[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=735241897]MendAndRecycle[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=733997423]Repair Workbench[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=932102953]Misc. Weapon Repair[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2482478785]Repairable Gear[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2564355300]Repair Items[/url]
+[/list]
+
+If I've missed any repair-mod, please leave a comment below and I'll try to add support for it.
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/ICantFixThat][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+
+[img]https://i.imgur.com/O0IIlYj.png[/img]
+Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [url=https://store.steampowered.com/wishlist/id/Mlie]Wishlist[/url] or buy me a cup of tea.
+
+[url=https://ko-fi.com/G2G55DDYD][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
