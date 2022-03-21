@@ -10,5 +10,6 @@
     <li IfModActive="Moony.RepairItems">Compatibility/RepairItems/1.3</li>
     <li IfModActive="Haplo.Miscellaneous.WeaponRepair">Compatibility/MiscWeaponRepair/1.3</li>
     <li IfModActive="notfood.MendAndRecycle">Compatibility/MendAndRecycle/1.3</li>
+    <li IfModActive="VanillaExpanded.VFEA">Compatibility/VFEAncients/1.3</li>
   </v1.3>
 </loadFolders>

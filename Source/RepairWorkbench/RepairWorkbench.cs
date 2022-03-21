@@ -2,7 +2,7 @@
 using HarmonyLib;
 using Verse;
 
-namespace ICantFixThat_RepairWorkbench;
+namespace ICantFixThat_VFEAncients;
 
 [StaticConstructorOnStartup]
 public static class RepairWorkbench

@@ -6,7 +6,7 @@ using ICantFixThat;
 using RimWorld;
 using Verse;
 
-namespace ICantFixThat_RepairWorkbench;
+namespace ICantFixThat_VFEAncients;
 
 [HarmonyPatch]
 public static class WorkGiver_Repair_FindDamagedItems
