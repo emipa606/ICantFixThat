@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICantFixThat_MendAndRecycle
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICantFixThat_VFEAncients", "VFEAncients\ICantFixThat_VFEAncients.csproj", "{041EEBF6-9CB5-4D83-AFE6-44DA0DB31E96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICantFixThat_LTSMaintenance", "ICantFixThat_LTSMaintenance\ICantFixThat_LTSMaintenance.csproj", "{A3145B1D-4522-462E-9C2D-61E2E9F613D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{041EEBF6-9CB5-4D83-AFE6-44DA0DB31E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{041EEBF6-9CB5-4D83-AFE6-44DA0DB31E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{041EEBF6-9CB5-4D83-AFE6-44DA0DB31E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3145B1D-4522-462E-9C2D-61E2E9F613D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3145B1D-4522-462E-9C2D-61E2E9F613D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3145B1D-4522-462E-9C2D-61E2E9F613D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3145B1D-4522-462E-9C2D-61E2E9F613D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
