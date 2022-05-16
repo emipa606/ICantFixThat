@@ -3,6 +3,7 @@ using HarmonyLib;
 using ICantFixThat;
 using RimWorld;
 using Verse;
+using VFEAncients;
 
 namespace ICantFixThat_VFEAncients;
 
@@ -15,9 +16,14 @@ public static class WorkGiver_Repair_FindDamagedItems
             new[] { typeof(Bill), typeof(Thing) });
     }
 
-    public static void Postfix(ref bool __result, Thing t)
+    public static void Postfix(ref bool __result, Thing t, Bill bill)
     {
         if (!__result)
+        {
+            return;
+        }
+
+        if (bill.recipe == null || !bill.recipe.HasModExtension<RecipeExtension_Mend>())
         {
             return;
         }
