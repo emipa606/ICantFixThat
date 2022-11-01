@@ -62,33 +62,25 @@ public static class Main
             }
         }
 
-        if (thingDef.building != null)
+        if (thingDef.building == null)
         {
-            var entDef = thingDef as BuildableDef;
-            if (entDef.minTechLevelToBuild != TechLevel.Undefined &&
-                Faction.OfPlayer.def.techLevel < entDef.minTechLevelToBuild)
-            {
-                return false;
-            }
-
-            if (entDef.maxTechLevelToBuild != TechLevel.Undefined &&
-                Faction.OfPlayer.def.techLevel > entDef.maxTechLevelToBuild)
-            {
-                return false;
-            }
-
-            if (!entDef.IsResearchFinished)
-            {
-                return false;
-            }
-
-            if (!Find.Storyteller.difficulty.AllowedToBuild(entDef))
-            {
-                return false;
-            }
+            return true;
         }
 
-        return true;
+        var entDef = thingDef as BuildableDef;
+        if (entDef.minTechLevelToBuild != TechLevel.Undefined &&
+            Faction.OfPlayer.def.techLevel < entDef.minTechLevelToBuild)
+        {
+            return false;
+        }
+
+        if (entDef.maxTechLevelToBuild != TechLevel.Undefined &&
+            Faction.OfPlayer.def.techLevel > entDef.maxTechLevelToBuild)
+        {
+            return false;
+        }
+
+        return entDef.IsResearchFinished && Find.Storyteller.difficulty.AllowedToBuild(entDef);
     }
 
     private static List<ResearchProjectDef> getLowestResearchProjectDefs(RecipeDef recipe)
@@ -129,11 +121,6 @@ public static class Main
             lowestTech = currentTech.First().techLevel;
         }
 
-        if (bestThing != null)
-        {
-            return bestThing.researchPrerequisites;
-        }
-
-        return null;
+        return bestThing?.researchPrerequisites;
     }
 }

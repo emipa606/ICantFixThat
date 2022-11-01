@@ -13,4 +13,17 @@
     <li IfModActive="VanillaExpanded.VFEA">Compatibility/VFEAncients/1.3</li>
     <li IfModActive="LimeTreeSnake.Maintenance">Compatibility/LTSMaintenance/1.3</li>
   </v1.3>
+  <v1.4>
+    <li>/</li>
+    <li>1.4</li>
+    <li IfModActive="theeyeofbrows.fluffybreakdowns">Compatibility/FluffyBreakdowns/1.4</li>
+    <li IfModActive="fluffy.fluffybreakdowns">Compatibility/FluffyBreakdowns/1.4</li>
+    <li IfModActive="Acruid.RepairBench">Compatibility/RepairWorkbench/1.4</li>
+    <li IfModActive="SteveZero.RepairableGear">Compatibility/RepairableGear/1.4</li>
+    <li IfModActive="Moony.RepairItems">Compatibility/RepairItems/1.4</li>
+    <li IfModActive="Haplo.Miscellaneous.WeaponRepair">Compatibility/MiscWeaponRepair/1.4</li>
+    <li IfModActive="notfood.MendAndRecycle">Compatibility/MendAndRecycle/1.4</li>
+    <li IfModActive="VanillaExpanded.VFEA">Compatibility/VFEAncients/1.4</li>
+    <li IfModActive="LimeTreeSnake.Maintenance">Compatibility/LTSMaintenance/1.4</li>
+  </v1.4>
 </loadFolders>

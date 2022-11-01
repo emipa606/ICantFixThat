@@ -1,5 +1,9 @@
 # Changelog for ICantFixThat
 
+1.4.1 - Mod updated for 1.4 and passed autotests.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.3.3 - VFE ancients patches all worktypes for some reason so added a check that the bill is a mending-bill
 
 

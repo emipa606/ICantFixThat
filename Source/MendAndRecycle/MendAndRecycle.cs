@@ -8,7 +8,7 @@ namespace ICantFixThat;
 [StaticConstructorOnStartup]
 public static class MendAndRecycle
 {
-    public static List<string> MendingRecipesList;
+    public static readonly List<string> MendingRecipesList;
 
     static MendAndRecycle()
     {

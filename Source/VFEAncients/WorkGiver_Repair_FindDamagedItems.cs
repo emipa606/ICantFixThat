@@ -1,8 +1,9 @@
-﻿using System.Reflection;
+﻿using System.Collections.Generic;
+using System.Reflection;
 using HarmonyLib;
 using ICantFixThat;
-using RimWorld;
 using Verse;
+using Verse.AI;
 using VFEAncients;
 
 namespace ICantFixThat_VFEAncients;
@@ -12,22 +13,32 @@ public static class WorkGiver_Repair_FindDamagedItems
 {
     public static MethodBase TargetMethod()
     {
-        return AccessTools.Method("VFEAncients.HarmonyPatches.MendingPatches:ExtraVerificationCheck",
-            new[] { typeof(Bill), typeof(Thing) });
+        return AccessTools.Method("VFEAncients.HarmonyPatches.MendingPatches:RepairItem");
     }
 
-    public static void Postfix(ref bool __result, Thing t, Bill bill)
+    public static bool Prefix(ref bool __result, List<Thing> ingredients, RecipeDef recipeDef)
     {
-        if (!__result)
+        if (!recipeDef.HasModExtension<RecipeExtension_Mend>())
         {
-            return;
+            return true;
         }
 
-        if (bill.recipe == null || !bill.recipe.HasModExtension<RecipeExtension_Mend>())
+        var thingToRepair = ingredients.FirstOrDefault(t =>
+            t.stackCount == 1 && (t.def.IsWeapon || t.def.IsApparel) && t.def.useHitPoints &&
+            t.HitPoints < t.MaxHitPoints);
+
+        if (thingToRepair == null)
         {
-            return;
+            return true;
         }
 
-        __result = Main.CanRepair(t);
+        if (Main.CanRepair(thingToRepair))
+        {
+            return true;
+        }
+
+        JobFailReason.Is("ICFT.NoKnowledge.reason".Translate());
+        __result = false;
+        return false;
     }
 }

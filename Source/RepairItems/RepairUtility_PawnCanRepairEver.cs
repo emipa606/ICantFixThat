@@ -9,8 +9,7 @@ public static class RepairUtility_PawnCanRepairEver
 {
     public static MethodBase TargetMethod()
     {
-        return AccessTools.Method("MoonyRepair.RepairUtility:PawnCanRepairEver",
-            new[] { typeof(Thing) });
+        return AccessTools.Method("MoonyRepair.RepairUtility:PawnCanRepairEver");
     }
 
     public static void Postfix(ref bool __result, Thing t)
