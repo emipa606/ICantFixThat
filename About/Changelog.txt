@@ -1,5 +1,8 @@
 # Changelog for ICantFixThat
 
+1.4.3 - Removed redundant assemblies in the compatibility folders
+
+
 1.4.2 - Added setting to block repair based on tech-level as well.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 

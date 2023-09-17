@@ -24,6 +24,8 @@ Its compatible with the following mods:
 
 If I've missed any repair-mod, please leave a comment below and I'll try to add support for it.
 
+There is also a setting to block repair based on colony tech-level. 
+
 ![Image](https://i.imgur.com/Ds0rBAD.png)
 
 Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my https://store.steampowered.com/wishlist/id/Mlie]Wishlist or buy me a cup of tea.
