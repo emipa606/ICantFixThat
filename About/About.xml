@@ -19,7 +19,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://i.imgur.com/iCj5o7O.png[/img]
 
 This mod stops your pawns from being able to repair buildings, apparel and weapons that they do not know how to build in the first place. 
 Basically anything that has not been researched can be used but not repaired.
@@ -42,7 +42,7 @@ If I've missed any repair-mod, please leave a comment below and I'll try to add 
 
 [table]
     [tr]
-        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
         [td][url=https://github.com/emipa606/ICantFixThat][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
     [tr]
@@ -51,12 +51,12 @@ If I've missed any repair-mod, please leave a comment below and I'll try to add 
     [/tr]
 [/table]
 
-[img]https://i.imgur.com/O0IIlYj.png[/img]
+[img]https://i.imgur.com/Ds0rBAD.png[/img]
 Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [url=https://store.steampowered.com/wishlist/id/Mlie]Wishlist[/url] or buy me a cup of tea.
 
-[url=https://ko-fi.com/G2G55DDYD][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
+[url=https://ko-fi.com/G2G55DDYD][img]https://i.imgur.com/VWG0yff.png[/img][/url]
 
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://i.imgur.com/5xwDG6H.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -66,5 +66,5 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
 
-</description>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2780971535][img]https://img.shields.io/github/v/release/emipa606/ICantFixThat?label=latest%20version&amp;style=plastic&amp;labelColor=0070cd&amp;color=white[/img][/url]</description>
 </ModMetaData>

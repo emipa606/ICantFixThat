@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <ICFT.NoKnowledge.reason>Colony have not enough knowledge</ICFT.NoKnowledge.reason>
+  <ICFT.CurrentModVersion>Installed mod-version: {0}</ICFT.CurrentModVersion>
+  <ICFT.AlsoBlockTechlevel>Also block based on colony techlevel</ICFT.AlsoBlockTechlevel>
+  <ICFT.AlsoBlockTechlevelLevel>Block if items techlevel is more than {0} levels over colony</ICFT.AlsoBlockTechlevelLevel>
+  <ICFT.TechLevelExplanation>Current colony tech-level: {0}
+Max repairable tech-level: {1}</ICFT.TechLevelExplanation>
 </LanguageData>

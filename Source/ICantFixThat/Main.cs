@@ -54,12 +54,19 @@ public static class Main
             return true;
         }
 
-        if (thingResearchDictionary.ContainsKey(thingDef))
+        if (thingResearchDictionary.TryGetValue(thingDef, out var value))
         {
-            if (thingResearchDictionary[thingDef].Any(def => !def.IsFinished))
+            if (value.Any(def => !def.IsFinished))
             {
                 return false;
             }
+        }
+
+        if (ICantFixThatMod.instance.Settings.AlsoBlockTechlevel &&
+            (int)Faction.OfPlayer.def.techLevel + ICantFixThatMod.instance.Settings.AlsoBlockTechlevelLevel <
+            (int)thingDef.techLevel)
+        {
+            return false;
         }
 
         if (thingDef.building == null)

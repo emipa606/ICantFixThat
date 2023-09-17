@@ -1,5 +1,9 @@
 # Changelog for ICantFixThat
 
+1.4.2 - Added setting to block repair based on tech-level as well.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
