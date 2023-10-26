@@ -15,7 +15,7 @@ public static class WorkGiver_FixBrokenDownBuilding_HasJobOnThing
             return;
         }
 
-        if (!pawn.Faction.IsPlayer)
+        if (!Main.IsValidRepairer(pawn))
         {
             return;
         }

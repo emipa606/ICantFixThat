@@ -47,6 +47,21 @@ public static class Main
         return thingResearchDictionary.Keys.Where(def => !CanRepair(def)).ToList();
     }
 
+    public static bool IsValidRepairer(Pawn pawn)
+    {
+        if (pawn.IsColonist)
+        {
+            return true;
+        }
+
+        if (pawn.IsPrisonerOfColony)
+        {
+            return true;
+        }
+
+        return pawn.IsSlaveOfColony || pawn.IsColonyMech;
+    }
+
     public static bool CanRepair(ThingDef thingDef)
     {
         if (DebugSettings.godMode)

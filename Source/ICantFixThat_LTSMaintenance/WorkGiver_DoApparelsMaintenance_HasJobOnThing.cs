@@ -22,7 +22,7 @@ public static class WorkGiver_DoApparelsMaintenance_HasJobOnThing
             return;
         }
 
-        if (!pawn.Faction.IsPlayer)
+        if (!Main.IsValidRepairer(pawn))
         {
             return;
         }
