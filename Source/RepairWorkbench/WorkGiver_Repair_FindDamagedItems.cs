@@ -14,7 +14,7 @@ public static class WorkGiver_Repair_FindDamagedItems
     public static MethodBase TargetMethod()
     {
         return AccessTools.Method("Repair.WorkGiver_Repair:FindDamagedItems",
-            new[] { typeof(Pawn), typeof(Thing), typeof(Bill) });
+            [typeof(Pawn), typeof(Thing), typeof(Bill)]);
     }
 
     public static void Postfix(ref List<Thing> __result)

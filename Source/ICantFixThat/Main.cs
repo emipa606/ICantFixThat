@@ -109,7 +109,7 @@ public static class Main
     {
         if (recipe.researchPrerequisite != null)
         {
-            return new List<ResearchProjectDef> { recipe.researchPrerequisite };
+            return [recipe.researchPrerequisite];
         }
 
         if (recipe.researchPrerequisites is { Count: > 0 })

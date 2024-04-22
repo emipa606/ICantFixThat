@@ -4,7 +4,7 @@ using Verse;
 
 namespace ICantFixThat;
 
-[HarmonyPatch(typeof(TargetingParameters), "ForRepair", typeof(Pawn))]
+[HarmonyPatch(typeof(TargetingParameters), nameof(TargetingParameters.ForRepair), typeof(Pawn))]
 public static class TargetingParameters_ForRepair
 {
     public static void Postfix(ref TargetingParameters __result, Pawn repairer)

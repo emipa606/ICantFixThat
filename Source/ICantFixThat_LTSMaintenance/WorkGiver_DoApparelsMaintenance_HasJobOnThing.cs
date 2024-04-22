@@ -12,7 +12,7 @@ public static class WorkGiver_DoApparelsMaintenance_HasJobOnThing
     public static MethodBase TargetMethod()
     {
         return AccessTools.Method("Maintenance.WorkGivers.WorkGiver_DoApparelsMaintenance:HasJobOnThing",
-            new[] { typeof(Pawn), typeof(Thing), typeof(bool) });
+            [typeof(Pawn), typeof(Thing), typeof(bool)]);
     }
 
     public static void Postfix(ref bool __result, Pawn pawn, bool forced)

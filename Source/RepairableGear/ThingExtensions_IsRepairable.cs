@@ -12,9 +12,9 @@ public static class ThingExtensions_IsRepairable
     public static IEnumerable<MethodBase> TargetMethods()
     {
         yield return AccessTools.Method("RepairableGear.ThingExtensions:IsRepairable",
-            new[] { typeof(Thing) });
+            [typeof(Thing)]);
         yield return AccessTools.Method("RepairableGear.ThingExtensions:CanBeMaintenanced",
-            new[] { typeof(Thing) });
+            [typeof(Thing)]);
     }
 
     public static void Postfix(ref bool __result, Thing thing)

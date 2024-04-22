@@ -12,7 +12,7 @@ public static class WorkGiver_Maintenance_HasJobOnThing
     public static MethodBase TargetMethod()
     {
         return AccessTools.Method("Fluffy_Breakdowns.WorkGiver_Maintenance:HasJobOnThing",
-            new[] { typeof(Pawn), typeof(Thing), typeof(bool) });
+            [typeof(Pawn), typeof(Thing), typeof(bool)]);
     }
 
     public static void Postfix(ref bool __result, Pawn pawn, Thing thing)

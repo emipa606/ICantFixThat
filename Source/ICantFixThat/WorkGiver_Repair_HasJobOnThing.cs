@@ -5,7 +5,8 @@ using Verse.AI;
 
 namespace ICantFixThat;
 
-[HarmonyPatch(typeof(WorkGiver_Repair), "HasJobOnThing", typeof(Pawn), typeof(Thing), typeof(bool))]
+[HarmonyPatch(typeof(WorkGiver_Repair), nameof(WorkGiver_Repair.HasJobOnThing), typeof(Pawn), typeof(Thing),
+    typeof(bool))]
 public static class WorkGiver_Repair_HasJobOnThing
 {
     public static void Postfix(ref bool __result, Pawn pawn, Thing t)

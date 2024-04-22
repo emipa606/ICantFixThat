@@ -12,13 +12,13 @@ public static class MendAndRecycle
 
     static MendAndRecycle()
     {
-        MendingRecipesList = new List<string>
-        {
+        MendingRecipesList =
+        [
             "MendSimpleApparel",
             "MendComplexApparel",
             "MendSimpleWeapon",
             "MendComplexWeapon"
-        };
+        ];
         new Harmony("Mlie.ICantFixThat.MendAndRecycle").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

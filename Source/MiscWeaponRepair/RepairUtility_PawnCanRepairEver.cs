@@ -9,7 +9,7 @@ public static class RepairUtility_PawnCanRepairEver
 {
     public static MethodBase TargetMethod()
     {
-        return AccessTools.Method("WeaponRepair.CompWeaponRepairTwo2One:GetAvailableTwinThing", new[] { typeof(Pawn) });
+        return AccessTools.Method("WeaponRepair.CompWeaponRepairTwo2One:GetAvailableTwinThing", [typeof(Pawn)]);
     }
 
     public static void Postfix(ref Thing __result)

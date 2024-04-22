@@ -55,7 +55,7 @@ internal class ICantFixThatMod : Mod
         if (Settings.AlsoBlockTechlevel)
         {
             listing_Standard.Label("ICFT.AlsoBlockTechlevelLevel".Translate(Settings.AlsoBlockTechlevelLevel));
-            Settings.AlsoBlockTechlevelLevel = (float)Math.Round(Widgets.HorizontalSlider_NewTemp(
+            Settings.AlsoBlockTechlevelLevel = (float)Math.Round(Widgets.HorizontalSlider(
                 listing_Standard.GetRect(20),
                 Settings.AlsoBlockTechlevelLevel, 0, Enum.GetValues(typeof(TechLevel)).Length - 1));
 
