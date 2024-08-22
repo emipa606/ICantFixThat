@@ -1,5 +1,8 @@
 # Changelog for ICantFixThat
 
+1.5.1 - Fixed [LTS]Maintenance compatibility
+
+
 1.5.0 - Updated for 1.5
 
 
