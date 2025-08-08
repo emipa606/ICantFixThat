@@ -2,7 +2,15 @@
   "Continued": false,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
-  "FundingSet": true
+  "FundingSet": true,
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 37799,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 74,
+  "LastXmlCleaning": "2025-08-08T20:54:26.587139+02:00",
+  "SearchTags": "repair restriction"
 }

@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="FluffyBreakdowns/ICantFixThat_FluffyBreakdowns.csproj" />
+  <Project Path="ICantFixThat/ICantFixThat.csproj" />
+  <Project Path="ICantFixThat_LTSMaintenance/ICantFixThat_LTSMaintenance.csproj" />
+  <Project Path="MendAndRecycle/ICantFixThat_MendAndRecycle.csproj" />
+  <Project Path="MiscWeaponRepair/ICantFixThat_MiscWeaponRepair.csproj" />
+  <Project Path="RepairableGear/ICantFixThat_RepairableGear.csproj" />
+  <Project Path="RepairItems/ICantFixThat_RepairItems.csproj" />
+  <Project Path="RepairWorkbench/ICantFixThat_RepairWorkbench.csproj" />
+  <Project Path="VFEAncients/ICantFixThat_VFEAncients.csproj" />
+</Solution>
