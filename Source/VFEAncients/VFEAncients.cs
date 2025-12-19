@@ -9,6 +9,7 @@ public static class VFEAncients
 {
     static VFEAncients()
     {
+        Log.Message("[ICantFixThat]: Adding compatibility with Vanilla Factions Expanded - Ancients");
         new Harmony("Mlie.ICantFixThat.VFEAncients").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

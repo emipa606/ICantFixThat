@@ -19,6 +19,7 @@ public static class MendAndRecycle
             "MendSimpleWeapon",
             "MendComplexWeapon"
         ];
+        Log.Message("[ICantFixThat]: Adding compatibility with MendAndRecycle");
         new Harmony("Mlie.ICantFixThat.MendAndRecycle").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

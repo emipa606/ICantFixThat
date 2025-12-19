@@ -51,5 +51,6 @@
     <li IfModActive="notfood.MendAndRecycle">Compatibility/MendAndRecycle/1.6</li>
     <li IfModActive="VanillaExpanded.VFEA">Compatibility/VFEAncients/1.6</li>
     <li IfModActive="LimeTreeSnake.Maintenance">Compatibility/LTSMaintenance/1.6</li>
+    <li IfModActive="Og.Repair.Your.Gear">Compatibility/OgRepairYourGear/1.6</li>
   </v1.6>
 </loadFolders>

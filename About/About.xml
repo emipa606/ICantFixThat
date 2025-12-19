@@ -21,7 +21,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/iCj5o7O.png[/img]
+  <description>[img]https://img.litet.net/logos/Self-Info.png[/img]
 
 This mod stops your pawns from being able to repair buildings, apparel and weapons that they do not know how to build in the first place. 
 Basically anything that has not been researched can be used but not repaired.
@@ -46,21 +46,21 @@ There is also a setting to block repair based on colony tech-level.
 
 [table]
     [tr]
-        [td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-        [td][url=https://github.com/emipa606/ICantFixThat][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+        [td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/ICantFixThat][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
-        [td][img]https://i.imgur.com/h5VwTNL.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToRemove.png[/img][/td]
     [/tr]
 [/table]
 
-[img]https://i.imgur.com/Ds0rBAD.png[/img]
+[img]https://img.litet.net/logos/Self-SupportAndDonations.png[/img]
 Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [url=https://store.steampowered.com/wishlist/id/Mlie]Wishlist[/url] or buy me a cup of tea.
 
-[url=https://ko-fi.com/G2G55DDYD][img]https://i.imgur.com/VWG0yff.png[/img][/url]
+[url=https://ko-fi.com/G2G55DDYD][img]https://img.litet.net/logos/Kofi-Small.png[/img][/url]
 
-[img]https://i.imgur.com/5xwDG6H.png[/img]
+[img]https://img.litet.net/logos/Self-ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -72,5 +72,5 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 [/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2780971535][img]https://img.shields.io/github/v/release/emipa606/ICantFixThat?label=latest%20version&amp;style=plastic&amp;labelColor=0070cd&amp;color=white[/img][/url] | tags: repair restriction</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
 </ModMetaData>

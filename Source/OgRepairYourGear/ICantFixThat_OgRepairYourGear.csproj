@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputPath>..\..\1.6\Assemblies</OutputPath>
+    <OutputPath>..\..\Compatibility\OgRepairYourGear\1.6\Assemblies</OutputPath>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -19,6 +19,11 @@
       <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Mlie_Rimworld_VersionFromManifest" Version="*" />
+    <ProjectReference Include="..\ICantFixThat\ICantFixThat.csproj">
+      <CopyLocalSatelliteAssemblies>False</CopyLocalSatelliteAssemblies>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
+      <ExcludeAssets>all</ExcludeAssets>
+    </ProjectReference>
   </ItemGroup>
 </Project>

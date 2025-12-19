@@ -9,6 +9,7 @@ public static class MiscWeaponRepair
 {
     static MiscWeaponRepair()
     {
+        Log.Message("[ICantFixThat]: Adding compatibility with Misc. Weapon Repair");
         new Harmony("Mlie.ICantFixThat.MiscWeaponRepair").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

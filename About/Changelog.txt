@@ -1,5 +1,8 @@
 # Changelog for ICantFixThat
 
+1.6.2 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3513376486][Og] Repair Your Gear[/url]
+
+
 1.6.1 - Better language
 
 

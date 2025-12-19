@@ -10,6 +10,7 @@
   <Project Path="ICantFixThat_LTSMaintenance/ICantFixThat_LTSMaintenance.csproj" />
   <Project Path="MendAndRecycle/ICantFixThat_MendAndRecycle.csproj" />
   <Project Path="MiscWeaponRepair/ICantFixThat_MiscWeaponRepair.csproj" />
+  <Project Path="OgRepairYourGear/ICantFixThat_OgRepairYourGear.csproj" />
   <Project Path="RepairableGear/ICantFixThat_RepairableGear.csproj" />
   <Project Path="RepairItems/ICantFixThat_RepairItems.csproj" />
   <Project Path="RepairWorkbench/ICantFixThat_RepairWorkbench.csproj" />

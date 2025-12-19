@@ -1,6 +1,6 @@
 # [I Cant Fix That](https://steamcommunity.com/sharedfiles/filedetails/?id=2780971535)
 
-![Image](https://i.imgur.com/iCj5o7O.png)
+![Image](https://img.litet.net/logos/Self-Info.png)
 
 This mod stops your pawns from being able to repair buildings, apparel and weapons that they do not know how to build in the first place. 
 Basically anything that has not been researched can be used but not repaired.
@@ -25,13 +25,13 @@ If I've missed any repair-mod, please leave a comment below and I'll try to add 
 
 There is also a setting to block repair based on colony tech-level. 
 
-![Image](https://i.imgur.com/Ds0rBAD.png)
+![Image](https://img.litet.net/logos/Self-SupportAndDonations.png)
 
 Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [Wishlist](https://store.steampowered.com/wishlist/id/Mlie) or buy me a cup of tea.
 
-[![Image](https://i.imgur.com/VWG0yff.png)](https://ko-fi.com/G2G55DDYD)
+[![Image](https://img.litet.net/logos/Kofi-Small.png)](https://ko-fi.com/G2G55DDYD)
 
-![Image](https://i.imgur.com/5xwDG6H.png)
+![Image](https://img.litet.net/logos/Self-ReportingIssues.png)
 
 
 
