@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputPath>..\..\Compatibility\LTSMaintenance\1.6\Assemblies</OutputPath>
+    <OutputPath>..\..\Compatibility\GlittertechExpansion\1.6\Assemblies</OutputPath>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>

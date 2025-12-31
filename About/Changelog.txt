@@ -1,5 +1,8 @@
 # Changelog for ICantFixThat
 
+1.6.3 - Added compatiblity with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3522676478]Glittertech Expansion[/url]
+
+
 1.6.2 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3513376486][Og] Repair Your Gear[/url]
 
 

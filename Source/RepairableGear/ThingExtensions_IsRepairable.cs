@@ -3,6 +3,7 @@ using System.Reflection;
 using HarmonyLib;
 using ICantFixThat;
 using Verse;
+using Verse.AI;
 
 namespace ICantFixThat_RepairableGear;
 
@@ -25,5 +26,10 @@ public static class ThingExtensions_IsRepairable
         }
 
         __result = Main.CanRepair(thing);
+
+        if (!__result)
+        {
+            JobFailReason.Is("ICFT.NoKnowledge.reason".Translate());
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using HarmonyLib;
 using Verse;
+using Verse.AI;
 
 namespace ICantFixThat;
 
@@ -19,9 +20,12 @@ public static class RepairUtility_PawnCanRepairEver
             return;
         }
 
-        if (!Main.CanRepair(__result))
+        if (Main.CanRepair(__result))
         {
-            __result = null;
+            return;
         }
+
+        JobFailReason.Is("ICFT.NoKnowledge.reason".Translate());
+        __result = null;
     }
 }

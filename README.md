@@ -18,6 +18,7 @@ Its compatible with the following mods:
 -  [Repair Items](https://steamcommunity.com/sharedfiles/filedetails/?id=2564355300)
 -  [Vanilla Factions Expanded - Ancients](https://steamcommunity.com/sharedfiles/filedetails/?id=2654846754)
 - [[LTS]Maintenance](https://steamcommunity.com/sharedfiles/filedetails/?id=2803673873)
+- [[Og] Repair Your Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=3513376486)
 
 
 

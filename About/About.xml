@@ -38,6 +38,7 @@ Its compatible with the following mods:
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2564355300]Repair Items[/url]
 [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2654846754]Vanilla Factions Expanded - Ancients[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2803673873][LTS]Maintenance[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3513376486][Og] Repair Your Gear[/url]
 [/list]
 
 If I've missed any repair-mod, please leave a comment below and I'll try to add support for it.
@@ -72,5 +73,5 @@ Since modding is just a hobby for me I expect no donations to keep modding. If y
 [/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2780971535][img]https://img.shields.io/github/v/release/emipa606/ICantFixThat?label=latest%20version&amp;style=plastic&amp;labelColor=0070cd&amp;color=white[/img][/url] | tags: repair restriction</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>
