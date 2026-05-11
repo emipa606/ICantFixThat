@@ -15,5 +15,15 @@
   <Project Path="RepairableGear/ICantFixThat_RepairableGear.csproj" />
   <Project Path="RepairItems/ICantFixThat_RepairItems.csproj" />
   <Project Path="RepairWorkbench/ICantFixThat_RepairWorkbench.csproj" />
+  <Project Path="SimpleMending/ICantFixThat_SimpleMending.csproj" />
   <Project Path="VFEAncients/ICantFixThat_VFEAncients.csproj" />
+  <Folder Name="/XML/" />
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/" />
+  <Folder Name="/XML/Languages/English/" />
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Mod_Settings.xml" />
+  </Folder>
 </Solution>
