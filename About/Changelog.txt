@@ -1,5 +1,8 @@
 # Changelog for ICantFixThat
 
+1.6.5 - Fixed Simple Mending compatibility
+
+
 1.6.4 - Added compatibility with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3657705987]Simple Mending[/url]
 
 

@@ -1,55 +1,77 @@
-# GitHub Copilot Instructions for "I Cant Fix That" Mod
+# GitHub Copilot Instructions for "I Cant Fix That" RimWorld Modding Project
 
 ## Mod Overview and Purpose
 
-"I Cant Fix That" is a mod for RimWorld designed to restrict pawns from repairing buildings, apparel, and weapons that they do not know how to build due to a lack of research. This reflects a more realistic narrative that a tribal colony should not possess the knowledge to effectively repair advanced technology and weaponry, such as solar panels or sniper rifles. 
+**Mod Name**: I Cant Fix That  
+**Author**: Mlie  
+**PackageId**: Mlie.ICantFixThat  
 
-The mod is compatible with several other popular repair mods and offers an option to block repairs based on the colony's tech level.
+"I Cant Fix That" is a mod for RimWorld that introduces realistic mechanics around the repair of buildings, apparel, and weapons. The purpose of the mod is to prevent pawns from repairing items they lack the knowledge to construct, ensuring that only researched technology can be properly maintained. This adds a layer of strategy regarding technology acquisition and maintenance within a colony, especially for tribal starts. It challenges the oddity of primitive societies capably maintaining advanced tech like solar panels and sniper rifles.
 
 ## Key Features and Systems
 
-- **Repair Restriction**: Pawns can only repair items and buildings that correspond to research they have completed, promoting a more authentic gameplay experience.
-- **Colony Tech-Level Settings**: An adjustable setting allows players to block repairs for items above their colony’s technological capability.
-- **Compatibility**: Works seamlessly with a variety of other repair-related mods, including:
-  - Fluffy Breakdowns
-  - MendAndRecycle
-  - Repair Workbench
-  - Misc. Weapon Repair
-  - And many more listed in the mod description.
+1. **Repair Restriction**: Pawns can only repair items if the technology is researched. Unresearched items can be used but not repaired.
+
+2. **Compatibility**: The mod is compatible with popular repair mods:
+   - Fluffy Breakdowns
+   - MendAndRecycle
+   - Repair Workbench
+   - Misc. Weapon Repair
+   - Repairable Gear
+   - Others
+
+   Support for additional mods can be added based on user feedback.
+
+3. **Tech-Level Setting**: There is a configurable setting to restrict repairs based on the colony's tech level.
 
 ## Coding Patterns and Conventions
 
-- **Static Classes**: Most helper functionalities are implemented using static classes and methods for utility style operations.
-- **Modular Design**: Each supported mod or feature has its own dedicated class file, making the codebase easily manageable and separable.
-- **Naming Conventions**: Follows C# conventions for naming, with clear and descriptive names for classes and methods to indicate their purpose.
+- **C# Naming Conventions**: Use PascalCase for class names and method names. Use camelCase for local variables and class members.
+
+- **File Organization**: Each feature enhancement or compatibility patch is in a dedicated folder and C# file(s).
+
+- **Method Signatures**: Reflectively synthesized method names and comments should clearly describe their purpose, preconditions, and postconditions.
 
 ## XML Integration
 
-The mod utilizes XML for defining and reading configuration settings corresponding to tech levels, repair permissions, and compatibility settings with other mods.
-
-- XML files are structured with clear nodes representing different settings.
-- Ensure the XML files are correctly placed in the `Defs` folder as required by RimWorld for XML integration.
+Currently, there are no XML definitions in this project, focusing entirely on C# and Harmony patches for integration.
 
 ## Harmony Patching
 
-- **Harmony Integration**: Uses Harmony to intercept and modify base game methods to enforce repair restrictions based on research.
-- **Patching Strategy**: Typically employs prefix and postfix patches to inject custom logic or override existing mechanisms related to repair tasks.
+Harmony is used extensively to patch and override existing methods:
+- **TargetMethod**: Identify the original method to patch.
+- **Postfix**: Define additional logic to be executed after the original method.
+- **Prefix**: Could be used for logic that needs to execute before the original method. (Currently no mention, but suggested if needed.)
+
+Example:
+csharp
+[HarmonyPatch(typeof(TargetType))]
+[HarmonyPatch(MethodType, MethodName = "TargetMethod")]
+public class HarmonyPatchExample
+{
+    public static void Postfix(TargetParameters parameters)
+    {
+        // Additional logic after the method is executed
+    }
+}
+
+Ensure all patches are checked for performance and potential conflicts with other mods.
 
 ## Suggestions for Copilot
 
-When using GitHub Copilot to contribute to or expand this mod, consider the following suggestions:
+1. **Code Completion**: Focus on generating method stubs consistently with the naming conventions and purpose brief provided above.
 
-1. **New Compatibility Enhancements**: Copilot can suggest new patches or extensions to make the mod compatible with newly released repair mods.
-  
-2. **Debugging Assistance**: Leverage Copilot for identifying potential issues in Harmony patches, especially those with complex conditional logic.
-  
-3. **XML Management**: Use Copilot to rapidly generate and modify XML configuration files as the mod expands to include more settings or compatibility options.
-  
-4. **Code Refactoring**: With large static utility classes, Copilot might help suggest optimal ways to refactor and optimize code for performance and readability.
-  
-5. **Feature Expansion**: Development of new features, such as additional repair restriction logic, where Copilot can assist with initial boilerplate or pattern recognition for repeated logic across multiple classes.
+2. **Compatibility Layers**: Assist with writing additional compatibility layers for new mods as requested by users.
 
-By maintaining consistent coding practices and leveraging GitHub Copilot effectively, extensions to "I Cant Fix That" can be implemented smoothly and efficiently.
+3. **Patching Examples**: Suggest relevant Harmony patch examples and comment them for clarity to maintain consistency in the project's methodology.
+
+4. **Configuration Handling**: Assist in writing code that interfaces user configuration settings, particularly for managing tech-level restrictions.
+
+5. **Documentation**: Encourage inline documentation in new or confusing sections of code to aid current and future developers in understanding the workflow.
+
+---
+
+End of Copilot instructions guide. Any changes or updates to the mod's features should be reflected here promptly.
 
 ## Project Solution Guidelines
 - Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
@@ -58,3 +80,9 @@ By maintaining consistent coding practices and leveraging GitHub Copilot effecti
 - When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
 - In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
 - For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
+
+
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+

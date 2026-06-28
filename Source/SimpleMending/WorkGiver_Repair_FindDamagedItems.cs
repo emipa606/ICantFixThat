@@ -12,8 +12,8 @@ public static class RepairUtilities_CanRepairThing
 {
     public static IEnumerable<MethodBase> TargetMethods()
     {
-        yield return AccessTools.Method("ComfyCuddlesWithEuterpe.RepairUtilities:CanRepairThing");
-        yield return AccessTools.Method("ComfyCuddlesWithEuterpe.RepairUtilities:IsRepairCostAllowed");
+        yield return AccessTools.Method("ComfyCuddlesWithEuterpe.RepairUtilities:TryGetRepairCost");
+        //yield return AccessTools.Method("ComfyCuddlesWithEuterpe.RepairUtilities:IsRepairCostAllowed");
     }
 
     public static void Postfix(ref bool __result, Thing thing)
