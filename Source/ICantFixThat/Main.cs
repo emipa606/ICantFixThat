@@ -90,16 +90,20 @@ public static class Main
         }
 
         var entDef = thingDef as BuildableDef;
-        if (entDef.minTechLevelToBuild != TechLevel.Undefined &&
-            Faction.OfPlayer.def.techLevel < entDef.minTechLevelToBuild)
+        // If no research needed, block by tech level, otherwise block by IsResearchFinished.
+        if (entDef.researchPrerequisites == null)
         {
-            return false;
-        }
+            if (entDef.minTechLevelToBuild != TechLevel.Undefined &&
+                Faction.OfPlayer.def.techLevel < entDef.minTechLevelToBuild)
+            {
+                return false;
+            }
 
-        if (entDef.maxTechLevelToBuild != TechLevel.Undefined &&
-            Faction.OfPlayer.def.techLevel > entDef.maxTechLevelToBuild)
-        {
-            return false;
+            if (entDef.maxTechLevelToBuild != TechLevel.Undefined &&
+                Faction.OfPlayer.def.techLevel > entDef.maxTechLevelToBuild)
+            {
+                return false;
+            }
         }
 
         return entDef.IsResearchFinished && Find.Storyteller.difficulty.AllowedToBuild(entDef);
